@@ -1,3 +1,7 @@
+/* These 2 problems can be seen in many places across the project. */
+/* The usage of `css` and `module.css` is inconsistent across the project. As I can see from other files using `module.css`, this should also be a `module.css` file. */
+/* Although capitalization is not a problem in CSS, it is common to use lowercase for class names instead of something like "App" or "App-header". */
+
 .App {
   text-align: center;
   min-height: 100vh;
@@ -10,6 +14,7 @@
 }
 
 .main {
+  /* No need to have different units for padding here */
   padding-left: 30px;
   padding-right: 2em;
 }
@@ -27,6 +32,7 @@
 }
 
 .App-header {
+  /* This is one of many places that I can see old code being commented instead of removed. We have version control (Git) so instead of commenting this style out, we should totally remove it. */
   /*background-color: #282c34;*/
 
   /*color: white;*/
